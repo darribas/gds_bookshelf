@@ -56,3 +56,6 @@ docker build -t gds_bookshelf .
 ## Suggestions and feedback
 
 If you would like to see more books added to the shelf, please add an [issue on Github](https://github.com/darribas/gds_bookshelf/issues/new) or, even better, feel free to [send a pull request](https://github.com/darribas/gds_bookshelf/pulls).
+
+[![](https://toppng.com/uploads/thumbnail/github-mark-logo-vector-11573976116oq3oau9n10.png)](https://github.com/darribas/gds_bookshelf)
+
