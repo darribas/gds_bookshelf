@@ -7,6 +7,10 @@ gds_pysal:
 	unzip master.zip
 	mv book-master gds_pysal
 	rm master.zip
+	# Remove .md files
+	mv gds_pysal/toc.md gds_pysal/toc.tmp
+	cd gds_pysal/notebooks && rm *.md
+	mv gds_pysal/toc.tmp gds_pysal/toc.md
 geocompr:
 	# Clean pre
 	rm -rf geocompr
