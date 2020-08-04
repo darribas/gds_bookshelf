@@ -42,6 +42,17 @@ docker run --rm \
 
 Point your browser to `localhost:8888` and copy the token printed on the command line to access the running instance.
 
+### Build
+
+If you would like to build it manually to make sure you are pulling the latest
+version of each book, you can do so by downloading the
+[`Dockerfile`](Dockerfile) and the [`Makefile`](Makefile) of the project,
+placing them on the same directory and, from there, running:
+
+```shell
+docker build -t gds_bookshelf .
+```
+
 ## Suggestions and feedback
 
 If you would like to see more books added to the shelf, please add an [issue on Github](https://github.com/darribas/gds_bookshelf/issues/new) or, even better, feel free to [send a pull request](https://github.com/darribas/gds_bookshelf/pulls).
