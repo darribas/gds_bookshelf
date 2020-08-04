@@ -1,0 +1,7 @@
+geocompr/
+gds_pysal/
+.Rhistory
+master.zip
+book-master/
+.ipynb_checkpoints/
+.ipynb_checkpoints/*
