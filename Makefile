@@ -8,9 +8,9 @@ gds_pysal:
 	mv book-master gds_pysal
 	rm master.zip
 	# Remove .md files
-	mv gds_pysal/notebooks/toc.md gds_pysal/notebooks/toc.tmp
+	mv gds_pysal/notebooks/00_toc.md gds_pysal/notebooks/00_toc.tmp
 	cd gds_pysal/notebooks && rm *.md
-	mv gds_pysal/notebooks/toc.tmp gds_pysal/notebooks/toc.md
+	mv gds_pysal/notebooks/00_toc.tmp gds_pysal/notebooks/00_toc.md
 geocompr:
 	# Clean pre
 	rm -rf geocompr
