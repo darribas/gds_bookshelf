@@ -36,4 +36,11 @@ geocompr:
 website:
 	Rscript -e "library(markdown); rmarkdown::render('README.md')"
 	mv README.html index.html
-
+test:
+	for RMD in $$(cd geocompr && ls *.Rmd); \
+	do \
+            sed -i '1 i ```{r include=FALSE}\nknitr::opts_chunk$$set(eval = FALSE)\n```\n\n' geocompr/$$RMD; \
+			cd geocompr && \
+					Rscript -e "library(rmarkdown); rmarkdown::render('$$RMD', output_format = 'github_document')" && \
+            cd ../ ; \
+	done
