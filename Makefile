@@ -1,4 +1,4 @@
-shelf: gds_pysal san sdsr
+shelf: gds_pysal san sdsr 
 gds_pysal:
 	# Clean pre
 	rm -rf gds_pysal
@@ -37,16 +37,10 @@ geocompr:
 	rm master.zip
 	# .Rmd --> .md --> .ipynb
 	cd geocompr && \
-				jupytext --to notebook \
-						 --warn-only \
-						 --set-kernel ir \
-						 *.Rmd
-	#for RMD in (cd geocompr && ls *.Rmd); \
-	#do \
-	#		cd geocompr && \
-	#				Rscript -e "library(rmarkdown); rmarkdown::render('$(RMD)', output_format = 'md_document')"; \
-	#						 $(RMD); \
-	#done
+		jupytext --to notebook \
+			 --warn-only \
+			 --set-kernel ir \
+			 *.Rmd
 	# Remove Rmarkdown to lighten folder
 	cd geocompr && rm *.Rmd
 sdsr:
