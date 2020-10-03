@@ -33,6 +33,22 @@ geocompr:
 	#done
 	# Remove Rmarkdown to lighten folder
 	cd geocompr && rm *.Rmd
+sdsr:
+	# Clean pre
+	rm -rf sdsr
+	# Pull down
+	wget https://github.com/edzer/sdsr/archive/master.zip
+	unzip master.zip
+	mv sdsr-master sdsr
+	rm master.zip
+	# .Rmd --> .md --> .ipynb
+	cd sdsr && \
+		jupytext --to notebook \
+			 --warn-only \
+			 --set-kernel ir \
+			 *.Rmd
+	# Remove Rmarkdown to lighten folder
+	cd sdsr && rm *.Rmd
 website:
 	Rscript -e "library(markdown); rmarkdown::render('README.md')"
 	mv README.html index.html
