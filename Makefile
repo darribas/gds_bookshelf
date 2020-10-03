@@ -1,4 +1,4 @@
-shelf: gds_pysal geocompr
+shelf: gds_pysal
 gds_pysal:
 	# Clean pre
 	rm -rf gds_pysal
