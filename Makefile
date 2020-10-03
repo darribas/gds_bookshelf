@@ -1,4 +1,4 @@
-shelf: gds_pysal
+shelf: gds_pysal san sdsr
 gds_pysal:
 	# Clean pre
 	rm -rf gds_pysal
@@ -11,6 +11,22 @@ gds_pysal:
 	mv gds_pysal/notebooks/00_toc.md gds_pysal/notebooks/00_toc.tmp
 	cd gds_pysal/notebooks && rm *.md
 	mv gds_pysal/notebooks/00_toc.tmp gds_pysal/notebooks/00_toc.md
+san:
+	# Clean pre
+	rm -rf san
+	# Pull down
+	wget https://github.com/GDSL-UL/san.git
+	unzip master.zip
+	mv san-master san
+	rm master.zip
+	# .Rmd --> .md --> .ipynb
+	cd san && \
+		jupytext --to notebook \
+			 --warn-only \
+			 --set-kernel ir \
+			 *.Rmd
+	# Remove Rmarkdown to lighten folder
+	cd san && rm *.Rmd
 geocompr:
 	# Clean pre
 	rm -rf geocompr
