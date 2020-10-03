@@ -15,7 +15,7 @@ san:
 	# Clean pre
 	rm -rf san
 	# Pull down
-	wget https://github.com/GDSL-UL/san.git
+	wget https://github.com/GDSL-UL/san/archive/master.zip
 	unzip master.zip
 	mv san-master san
 	rm master.zip
