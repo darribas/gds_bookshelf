@@ -12,8 +12,10 @@ The GDS Bookshelf is a project to bundle together a few freely available books t
 
 Currently, the shelf includes the following references:
 
-- [*Geographic Data Science with PySAL and the PyData Stack*](https://geographicdata.science/book), by Serge Rey, Dani Arribas-Bel and Levi Wolf.
-- [*Geocomputation in R*](https://geocompr.robinlovelace.net/), by Robin Lovelace, Jakub Nowosad and Jannes Muenchow.
+- [*Geographic Data Science with PySAL and the PyData Stack*](https://geographicdata.science/book), by Serge Rey, Dani Arribas-Bel and Levi Wolf
+- [*Spatial Analysis Notes*](https://gdsl-ul.github.io/san/), by Francisco Rowe and Dani Arribas-Bel
+- [*Geocomputation in R*](https://geocompr.robinlovelace.net/), by Robin Lovelace, Jakub Nowosad and Jannes Muenchow
+- [*Spatial Data Science in R*](https://keen-swartz-3146c4.netlify.app), by Edzer Pebesma and Roger Bivand
 
 ## Access the shelf
 
